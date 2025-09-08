@@ -1,19 +1,26 @@
 const loadAllPlants = () => {
-    fetch('https://openapi.programming-hero.com/api/plants')
+    const spinner = document.getElementById('spinner');
+    spinner.classList.remove('hidden'); 
+    setTimeout(function () {
+         fetch('https://openapi.programming-hero.com/api/plants')
         .then(res => res.json())
         .then(api => displayAllPlants(api.plants))
         .catch(err => console.log(err))
+    },1000)
 }
 
+
 const displayAllPlants = (plants) => {
-    // console.log(plants)
+
+    document.getElementById('spinner').classList.add('hidden'); 
+
     const cardContainer = document.getElementById('card-container');
     cardContainer.innerHTML = '';
     plants.forEach(plant => {
         const cards = document.createElement('div')
         cards.innerHTML = `
          <div id="card-title" class=" p-2 card bg-white  space-y-5 rounded-xl">
-            <div class=" rounded-lg"><img class = 'md:w-[250px] w-full md:h-[120px] h-[150px] rounded-md' src="${plant.image}" alt=""></div>
+            <div class=" rounded-lg"><img class = 'md:w-[250px] w-full md:h-[130px] h-[150px] rounded-md' src="${plant.image}" alt=""></div>
                 <h3 onclick = 'loadTreeDetails(${plant.id})'  class="font-bold text-sm cursor-pointer">${plant.name}</h3>
                 <p class="text-[12px]">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green</p>
                 <div class="flex justify-between items-center ">
@@ -29,5 +36,17 @@ const displayAllPlants = (plants) => {
 
 
 }
+
+// All Tree button click (no spinner)
+document.getElementById('all-tree-btn').addEventListener('click', () => {
+    document.getElementById('spinner').classList.add('hidden');
+        fetch('https://openapi.programming-hero.com/api/plants')
+        .then(res => res.json())
+        .then(api => displayAllPlants(api.plants))
+        .catch(err => console.log(err))
+   
+    
+});
+
 
 loadAllPlants('all-tree-btn')
