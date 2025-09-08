@@ -14,7 +14,7 @@ const displayCategoryId  = (cardIds) => {
        const treeCard = document.createElement('div');
        treeCard.innerHTML = `
             <div id="card-title" class=" p-3 card  bg-white space-y-5 rounded-xl">
-            <div class=" rounded-lg"><img class = 'md:w-[250px] w-full md:h-[120px] h-[150px] rounded-md' src="${cardId.image}" alt=""></div>
+            <div class=" rounded-lg"><img class = 'md:w-[250px] w-full md:h-[130px] h-[170px] rounded-md' src="${cardId.image}" alt=""></div>
                 <h3 onclick = 'loadTreeDetails(${cardId.id})' class="font-bold text-sm cursor-pointer">${cardId.name}</h3>
                 <p class="text-[12px]">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green</p>
                 <div class="flex justify-between items-center ">
