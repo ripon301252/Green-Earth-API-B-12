@@ -1,18 +1,18 @@
 const loadAllPlants = () => {
     const spinner = document.getElementById('spinner');
-    spinner.classList.remove('hidden'); 
+    spinner.classList.remove('hidden');
     setTimeout(function () {
-         fetch('https://openapi.programming-hero.com/api/plants')
-        .then(res => res.json())
-        .then(api => displayAllPlants(api.plants))
-        .catch(err => console.log(err))
-    },1000)
+        fetch('https://openapi.programming-hero.com/api/plants')
+            .then(res => res.json())
+            .then(api => displayAllPlants(api.plants))
+            .catch(err => console.log(err))
+    }, 1000)
 }
 
 
 const displayAllPlants = (plants) => {
 
-    document.getElementById('spinner').classList.add('hidden'); 
+    document.getElementById('spinner').classList.add('hidden');
 
     const cardContainer = document.getElementById('card-container');
     cardContainer.innerHTML = '';
@@ -38,15 +38,13 @@ const displayAllPlants = (plants) => {
 }
 
 // All Tree button click (no spinner)
-document.getElementById('all-tree-btn').addEventListener('click', () => {
-    document.getElementById('spinner').classList.add('hidden');
-        fetch('https://openapi.programming-hero.com/api/plants')
-        .then(res => res.json())
-        .then(api => displayAllPlants(api.plants))
-        .catch(err => console.log(err))
-   
-    
-});
+// document.getElementById('all-tree-btn').addEventListener('click', () => {
+//     document.getElementById('spinner').classList.add('hidden');
+//     fetch('https://openapi.programming-hero.com/api/plants')
+//         .then(res => res.json())
+//         .then(api => displayAllPlants(api.plants))
+//         .catch(err => console.log(err))
+// });
 
 
 loadAllPlants('all-tree-btn')
