@@ -1,18 +1,4 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-006
-
-### 📅 Deadline For 60 marks: 9th September, 2025 (11:59 pm ⏱️)
-
-### 📅 Deadline For 50 marks : 13th September , 2025 (6:00 pm⏱️)
-
-### 📅 Deadline For 30 marks: Any time after 13the September , 2025 (6:01 pm⏱️).
-
----
 # Green Earth
-
-
-## Private Repository: https://classroom.github.com/a/nVZrg5R9
-
-
 ---
 🌴 API Endpoints
 ---
@@ -79,18 +65,17 @@ https://openapi.programming-hero.com/api/plant/1
 
 ---
 #### 7) Create a README file to answer the following question-
-
-
+-------------------------------------------------------------------------
 #### 1) What is the difference between var, let, and const?
-
+      1. Ans: do will the variable change & Reassign by var. do will the only Reassign by let. do not will variable change & Reassign by const .
 #### 2) What is the difference between map(), forEach(), and filter()? 
-
+      2. Ans: Return a new array based on the map. forEach does not return a new array, only the completed loop. Return a new array based on the filter condition.
 #### 3) What are arrow functions in ES6?
-
+      3. Ans: Arrow Function is short, nice syntax .
 #### 4) How does destructuring assignment work in ES6?
-
+      4. Ans: Destructuring is a shortcut method to easily extract data from an Object or Array.
 #### 5) Explain template literals in ES6. How are they different from string concatenation?
-
+     5. Ans: Template Literals is Simple syntax , Variable/Expression injection, Multi-line support. but concatenation complex not simple.
 ## ⚙️ Functionalities 
 
 1) Category Loading 
@@ -139,27 +124,3 @@ Clicking a tree name on a card opens a modal with full tree details.
     5) Active Button State 
     Highlight active category button when selected.
 
-
-
-🧰 Technology Stack:
-        
-        HTML
-
-        CSS (Vanilla / Tailwind / DaisyUI)
-
-        JavaScript (Vanilla only, no frameworks)
-
-📌 Rules
-✅ At least 5 meaningful commits
-
-❌ No dummy text or Lorem Ipsum — must use relevant content
-
-
-
-
-
-## 🔗 Submission
-- **Live Link :** YOUR_DEPLOYED_URL_HERE  
-- **GitHub Private Repository:** YOUR_REPO_URL_HERE  
-
----
