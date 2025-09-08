@@ -55,4 +55,5 @@ const handleButtonClick = (clickedBtn) => {
 //     clickedBtn.classList.add('bg-[#15803d]', 'text-white');
 // }
 
+
 loadCategories();
