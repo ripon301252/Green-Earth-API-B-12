@@ -15,7 +15,7 @@ const displayTreeDetails = (tree) => {
       
         <div class = 'space-y-5 '>
             <h3 class="text-lg font-bold">${tree.name}</h3>
-            <div><img class = ' md:w-[465px] w-[300px] md:h-[238px] h-[150px] rounded-md' src="${tree.image}" alt=""></div>
+            <div><img class = ' md:w-[465px] w-[370px] md:h-[238px] h-[150px] rounded-md' src="${tree.image}" alt=""></div>
             <p class="text-sm"><span class = 'font-bold text-base'>Category : </span>${tree.category}</p>
             <p class="text-base font-bold"><span>৳</span> <span>${tree.price}</span></p>
             <p class="text-sm"><span class = 'font-bold text-base'>Description :</span> ${tree.description}</p>
