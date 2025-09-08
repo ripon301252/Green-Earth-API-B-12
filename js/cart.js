@@ -1,5 +1,10 @@
  document.getElementById('card-container').addEventListener('click', (e) => {
 
+    if(e.target.localName !== 'button') {
+        return;
+    }
+        
+    console.log(e.target.localName === 'button')
     const totalPrice = document.getElementById('total-price').innerText;
    
     let treeName = '';
@@ -23,7 +28,7 @@
         <div class=" bg-[#f0fdf4] rounded-md flex justify-between items-center p-3 mt-3">
             <div>
                 <h1 class="font-bold">${treeName}</h1>
-                <p class="text-[#889396] "><span>৳</span><span id="price-title"> ${price}</span> x 1</p>
+                <p class="text-[#889396] "><span>৳</span><span id="price-title"> ${price}</span> × 1</p>
             </div>
             <div class="">
                 <p id = 'delete' class = 'cursor-pointer text-2xl text-[#889396]'>×</p>
@@ -34,7 +39,7 @@
  })
 
 
- // Delete feature
+ // Delete button
 document.getElementById('cart-container').addEventListener('click', (e) => {
 
     if (e.target.id === 'delete') {
