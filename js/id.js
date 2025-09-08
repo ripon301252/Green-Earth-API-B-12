@@ -1,12 +1,15 @@
 const loadCategoryId = (id) => {
-console.log(id)
+    spinner.classList.remove('hidden');
+    setTimeout(function () {
     fetch(`https://openapi.programming-hero.com/api/category/${id}`)
         .then(res => res.json())
         .then(api => displayCategoryId (api.plants))
         .catch(err => console.log(err))
+    }, 1000)   
 }
 
 const displayCategoryId  = (cardIds) => {
+    document.getElementById('spinner').classList.add('hidden');
     const cardContainer = document.getElementById('card-container');
     cardContainer.innerHTML = '';
     console.log(cardIds)
