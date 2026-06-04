@@ -1,4 +1,24 @@
-# Green Earth
+# 🌱 Green Earth
+
+A simple JavaScript project focused on environmental awareness and green initiatives.
+
+## 🚀 Features
+- View eco-friendly information  
+- Simple and clean UI  
+- Awareness about green environment  
+
+## 🛠️ Tech
+- HTML  
+- CSS  
+- JavaScript  
+
+## 🌐 Live Project
+https://ripon301252.github.io/Green-Earth-API-B-12/
+
+## 📌 Functionality
+- Browse environmental content  
+- Learn about green initiatives
+  
 ---
 🌴 API Endpoints
 ---
@@ -117,6 +137,9 @@ Clicking a tree name on a card opens a modal with full tree details.
 
     3) Remove from Cart 
     Clicking ❌ removes tree and deducts price from total.
+
+## 👨‍💻 Author
+Mahfuzur Rahman
 
     4) Loading Spinner
     Show spinner while data is loading.
